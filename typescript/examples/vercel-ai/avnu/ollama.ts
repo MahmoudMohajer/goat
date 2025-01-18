@@ -1,6 +1,6 @@
 import readline from "node:readline";
-import { openai } from "@ai-sdk/openai";
 import { generateText } from "ai";
+import { ollama } from "ollama-ai-provider";
 import { Account, RpcProvider } from "starknet";
 
 import { getOnChainTools } from "@goat-sdk/adapter-vercel-ai";
@@ -50,7 +50,7 @@ User request: `;
         console.log("\n-------------------\n");
         try {
             const result = await generateText({
-                model: openai("gpt-4o-mini"),
+                model: ollama("qwen2.5-coder:14b"),
                 tools: tools,
                 maxSteps: 15,
                 prompt: prompt,
@@ -65,4 +65,3 @@ User request: `;
         console.log("\n-------------------\n");
     }
 })();
-
