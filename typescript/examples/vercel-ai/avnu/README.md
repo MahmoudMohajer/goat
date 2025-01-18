@@ -1,5 +1,7 @@
 # Avnu Example
 
+> ⚠️ **Node.js Version Requirement**: This example requires Node.js version `>=20.12.2 <21`
+
 ## Setup
 
 1. Clone the repository (using this fork until merged with main goat repo):
