@@ -1,5 +1,7 @@
 # Avnu Example
 
+This example demonstrates how to use the GOAT SDK to interact with Avnu, a decentralized exchange on Starknet. It showcases token swaps, balance checks, and transfers using natural language commands through an AI interface powered by either OpenAI or Ollama.
+
 > ⚠️ **Node.js Version Requirement**: This example requires Node.js version `>=20.12.2 <21`
 
 > ⚠️ **Network Warning**: This example connects to **Starknet Mainnet**. Please ensure you use a testing wallet with a small amount of ETH for transaction fees. DO NOT use your primary wallet's private key.
