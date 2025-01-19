@@ -2,9 +2,11 @@
 
 > ⚠️ **Node.js Version Requirement**: This example requires Node.js version `>=20.12.2 <21`
 
+> ⚠️ **Network Warning**: This example connects to **Starknet Mainnet**. Please ensure you use a testing wallet with a small amount of ETH for transaction fees. DO NOT use your primary wallet's private key.
+
 ## Setup
 
-1. Clone the repository (using this fork until merged with main goat repo):
+1. Clone the repository:
 ```bash
 git clone https://github.com/MahmoudMohajer/goat.git
 cd goat
@@ -72,7 +74,14 @@ To change the Ollama model:
 model: ollama("qwen2.5-coder:14b")
 ```
 
-then you can prompt the agent to do tasks like swap, send, and get balance with prompts like these:
-- swap 2 USDC to ETH 
-- send 0.01 ETH to 0x1234567890123456789012345678901234567890
-- get my wallet address and STRK token address and pass them to the relevant tool to get the balance
+## Usage Examples
+
+You can prompt the agent to perform various tasks. Currently supported tokens are: USDC, STARK, ETH, and EKUBO. But for swap you need to pass the token address as example in the prompt.
+
+Example prompts:
+- `swap 0.2 USDC to ETH`
+- `swap 0.0003 ETH to 0x00c530f2c0aa4c16a0806365b0898499fba372e5df7a7172dc6fe9ba777e8007` (NOSTRA token address)
+- `send 0.000001 ETH to __your_target_wallet_address__`
+- `get my wallet address and STRK token address and pass them to the relevant tool to get the balance`
+- `what is my wallet address?` 
+- `give STRK token address` 
